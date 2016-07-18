@@ -50,20 +50,25 @@
 			<a  class="brand-logo">DevMountain</a>
 			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 			<ul class="right hide-on-med-and-down">
-				<li><a >Studio</a></li>
-				<li><a >Projects</a></li>
-				<li><a >Contact</a></li>
-				<li><a >Pricing</a></li>
+				<li><a ui-sref="studio">Studio</a></li>
+				<li><a ui-sref="projects({id: 'recent'})">Shoes</a></li>
+				<li><a ui-sref="contact">Contact</a></li>
+				<li><a ui-sref="pricing">Pricing</a></li>
 			</ul>
 			<ul class="side-nav" id="mobile-demo">
-				<li><a >Studio</a></li>
-				<li><a >Projects</a></li>
-				<li><a>Contact</a></li>
-				<li><a >Pricing</a></li>
+				<li><a ui-sref="studio">Studio</a></li>
+				<li><a ui-sref="projects({id: 'shoes'})">Shoes</a></li>
+				<li><a ui-sref="contact">Contact</a></li>
+				<li><a ui-sref="pricing">Pricing</a></li>
 			</ul>
 		</div>
 	</nav>
+
+
+
 	<main>
+
+
 		<ui-view></ui-view>
 
 	</main>
@@ -114,7 +119,7 @@
 <script type="text/javascript" src="angularStuff/mainCtrl.js"></script>
 
 <script type="text/javascript" src="angularStuff/routes.js"></script>
-
+<script type="text/javascript" src="angularStuff/service.js"></script>
 
 
 
